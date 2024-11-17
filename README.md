@@ -36,7 +36,7 @@ Modern template overrides for YOOtheme Pro using UIkit framework. This package p
 
 ## Installation
 
-1. Download the latest release `pkg_yootheme_uikit_overrides.zip`
+1. Download the latest release
 2. Go to Joomla Administrator → System → Install Extensions
 3. Drag and drop the package or use the "Upload Package File" option
 4. Install the package
@@ -57,18 +57,6 @@ Modern template overrides for YOOtheme Pro using UIkit framework. This package p
 - Enhanced password strength validation
 - Module position flexibility
 
-## Structure
-
-```
-pkg_yootheme_uikit_overrides/
-├── packages/
-│   ├── tpl_yootheme_users/
-│   │   └── (com_users overrides)
-│   └── tpl_yootheme_login/
-│       └── (mod_login overrides)
-├── pkg_yootheme_uikit_overrides.xml
-└── pkg_script.php
-```
 
 ## Customization
 
@@ -79,31 +67,10 @@ The template overrides follow YOOtheme Pro's styling conventions. You can custom
 3. Custom UIkit theme variables
 4. Additional CSS classes
 
-## Best Practices
-
-- Use UIkit's built-in classes when possible
-- Maintain mobile-first approach
-- Keep overrides minimal and focused
-- Follow Joomla's MVC pattern
-- Test across different module positions
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 
 MIT License. See [LICENSE](LICENSE) for more information.
-
-## Support
-
-- [Documentation](https://your-documentation-url.com)
-- [Issue Tracker](https://your-issue-tracker-url.com)
-- [Support Forum](https://your-support-forum-url.com)
 
 ## Credits
 
