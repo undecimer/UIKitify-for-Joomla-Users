@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="file" method="upgrade">
+    <name>YOOtheme Pro - mod_login Template Overrides</name>
+    <version>1.0.0</version>
+    <creationDate>2024-01</creationDate>
+    <author>Your Name</author>
+    <authorEmail>your.email@example.com</authorEmail>
+    <authorUrl>https://your-website.com</authorUrl>
+    <copyright>(C) 2024 Your Name. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <description>Modern UIkit template overrides for YOOtheme Pro - Login Module</description>
+
+    <fileset>
+        <files target="templates/yootheme/html/mod_login">
+            <filename>default.php</filename>
+            <filename>default_logout.php</filename>
+        </files>
+    </fileset>
+</extension>

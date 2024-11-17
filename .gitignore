@@ -1,0 +1,95 @@
+# Joomla System Files
+administrator/cache/*
+administrator/logs/*
+cache/*
+logs/*
+tmp/*
+configuration.php
+*.log
+
+# Package Installation Files
+pkg_yootheme_uikit_overrides.zip
+pkg_yootheme_uikit_overrides/packages/*.zip
+
+# IDE & System Files
+.idea/
+.vscode/
+.DS_Store
+.settings/
+.project
+.buildpath
+.metadata
+.classpath
+*.sublime-workspace
+*.sublime-project
+nbproject/
+.phpintel/
+*.swp
+*.swo
+*~
+
+# Node.js & Front-end Tools
+node_modules/
+bower_components/
+.npm
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer
+vendor/
+composer.phar
+composer.lock
+
+# Testing
+phpunit.xml
+/tests/Unit/coverage/
+.phpunit.result.cache
+
+# Build & Deployment
+/build/
+/dist/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Operating System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Backup Files
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+
+# Local Development
+*.local.php
+local-config.php
+config.local.php
+/local/
+
+# Documentation
+/docs/_build/
+/docs/_static/
+/docs/_templates/
+
+# Misc
+*.cache
+.sass-cache/
+.php_cs.cache
+.php-cs-fixer.cache
+.php_cs
+.php-cs-fixer.php

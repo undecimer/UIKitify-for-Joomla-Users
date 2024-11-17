@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="package" method="upgrade">
+    <name>YOOtheme Pro UIkit Template Overrides Package</name>
+    <packagename>yootheme_uikit_overrides</packagename>
+    <version>1.0.0</version>
+    <creationDate>2024-01</creationDate>
+    <author>Your Name</author>
+    <authorEmail>your.email@example.com</authorEmail>
+    <authorUrl>https://your-website.com</authorUrl>
+    <copyright>(C) 2024 Your Name. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <description>Modern UIkit template overrides for YOOtheme Pro</description>
+
+    <scriptfile>pkg_script.php</scriptfile>
+
+    <files folder="packages">
+        <file type="file" id="tpl_yootheme_users">tpl_yootheme_users.zip</file>
+        <file type="file" id="tpl_yootheme_login">tpl_yootheme_login.zip</file>
+    </files>
+
+    <updateservers>
+        <server type="extension" priority="1" name="YOOtheme Pro UIkit Template Overrides">https://your-website.com/updates/pkg_yootheme_uikit_overrides.xml</server>
+    </updateservers>
+</extension>
