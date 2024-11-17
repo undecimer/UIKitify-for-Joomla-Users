@@ -1,4 +1,6 @@
-# YOOtheme Pro UIkit Template Overrides
+# UIKitify for Joomla Users
+
+WARNING: This is a work in progress. It is not yet ready for production use. It has not been tested. Please use at your own risk. If you find any bugs, please report them. Thanks!
 
 Modern template overrides for YOOtheme Pro using UIkit framework. This package provides a clean, consistent, and modern design for Joomla's user authentication and login interfaces.
 
