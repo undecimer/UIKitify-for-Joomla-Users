@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @package     Joomla.Site
  * @subpackage  com_users
@@ -54,7 +53,7 @@ $usersConfig = ComponentHelper::getParams('com_users');
             </div>
 
             <div class="uk-card-body">
-                <form action="<?php echo Route::_('index.php?option=com_users&task=user.login'); ?>" 
+                <form action="<?php echo Route::_('index.php?option=com_users&task=user.login', true, $usersConfig->get('usesecure', 0)); ?>" 
                       method="post" 
                       class="uk-form-stacked" 
                       id="com-users-login__form">
@@ -103,6 +102,10 @@ $usersConfig = ComponentHelper::getParams('com_users');
                                 </button>
                             </div>
                         <?php endforeach; ?>
+                        
+                        <?php $return = $this->form->getValue('return', '', $this->params->get('login_redirect_url', $this->params->get('login_redirect_menuitem'))); ?>
+                        <input type="hidden" name="return" value="<?php echo base64_encode($return); ?>">
+                        <?php echo HTMLHelper::_('form.token'); ?>
                     </fieldset>
                 </form>
             </div>
@@ -131,7 +134,3 @@ $usersConfig = ComponentHelper::getParams('com_users');
         </div>
     </div>
 </div>
-
-<?php $return = $this->form->getValue('return', '', $this->params->get('login_redirect_url', $this->params->get('login_redirect_menuitem'))); ?>
-<input type="hidden" name="return" value="<?php echo base64_encode($return); ?>">
-<?php echo HTMLHelper::_('form.token'); ?>
