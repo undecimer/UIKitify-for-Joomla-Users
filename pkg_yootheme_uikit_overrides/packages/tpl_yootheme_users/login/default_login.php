@@ -48,7 +48,7 @@ $usersConfig = ComponentHelper::getParams('com_users');
         <div class="uk-card uk-card-default">
             <div class="uk-card-header uk-background-muted">
                 <h3 class="uk-card-title uk-margin-remove">
-                    <span uk-icon="icon: sign-in"></span> <?php echo Text::_('COM_USERS_LOGIN_TITLE') ?>
+                    <span uk-icon="icon: sign-in"></span> <?php echo Text::_('JLOGIN') ?>
                 </h3>
             </div>
 
@@ -114,7 +114,7 @@ $usersConfig = ComponentHelper::getParams('com_users');
                 <div class="uk-child-width-auto uk-grid-small uk-flex-center" uk-grid>
                     <div>
                         <a href="<?php echo Route::_('index.php?option=com_users&view=reset'); ?>" class="uk-button uk-button-link">
-                            <span uk-icon="icon: refresh"></span> <?php echo Text::_('COM_USERS_LOGIN_RESET'); ?>
+                            <span uk-icon="icon: unlock"></span> <?php echo Text::_('COM_USERS_LOGIN_RESET'); ?>
                         </a>
                     </div>
                     <div>

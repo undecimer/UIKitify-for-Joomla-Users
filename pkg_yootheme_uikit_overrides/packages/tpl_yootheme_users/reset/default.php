@@ -32,15 +32,11 @@ $wa->useScript('keepalive')
         <div class="uk-card uk-card-default">
             <div class="uk-card-header uk-background-muted">
                 <h3 class="uk-card-title uk-margin-remove">
-                    <span uk-icon="icon: unlock"></span> <?php echo Text::_('COM_USERS_RESET_REQUEST_LABEL') ?>
+                    <span uk-icon="icon: unlock"></span> <?php echo Text::_('COM_USERS_RESET') ?>
                 </h3>
             </div>
 
             <div class="uk-card-body">
-                <div class="uk-alert uk-alert-primary">
-                    <?php echo Text::_('COM_USERS_RESET_REQUEST_DESC') ?>
-                </div>
-
                 <form id="user-registration" 
                       action="<?php echo Route::_('index.php?option=com_users&task=reset.request'); ?>" 
                       method="post" 
@@ -63,7 +59,7 @@ $wa->useScript('keepalive')
 
                     <div class="uk-margin uk-text-center">
                         <a class="uk-button uk-button-link" href="<?php echo Route::_('index.php?option=com_users&view=login'); ?>">
-                            <span uk-icon="icon: arrow-left"></span> <?php echo Text::_('COM_USERS_LOGIN_RESET'); ?>
+                            <span uk-icon="icon: arrow-left"></span> <?php echo Text::_('COM_USERS_LOGIN_DEFAULT_LABEL'); ?>
                         </a>
                     </div>
 

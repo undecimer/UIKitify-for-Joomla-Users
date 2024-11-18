@@ -123,14 +123,11 @@ $wa->addInlineScript('
         <div class="uk-card uk-card-default">
             <div class="uk-card-header uk-background-muted">
                 <h3 class="uk-card-title uk-margin-remove">
-                    <span uk-icon="icon: user"></span> <?php echo Text::_('COM_USERS_REGISTRATION_TITLE') ?>
+                    <span uk-icon="icon: user"></span> <?php echo Text::_('COM_USERS_REGISTRATION') ?>
                 </h3>
             </div>
 
             <div class="uk-card-body">
-                <div class="uk-alert uk-alert-primary">
-                    <?php echo Text::_('COM_USERS_REGISTRATION_DESC') ?>
-                </div>
 
                 <form id="member-registration" 
                       action="<?php echo Route::_('index.php?option=com_users&task=registration.register'); ?>" 
@@ -160,22 +157,15 @@ $wa->addInlineScript('
                         <?php endif; ?>
                     <?php endforeach; ?>
 
-                    <?php if ($this->form->getField('password1')) : ?>
-                        <div class="uk-margin">
-                            <label class="uk-form-label"><?php echo Text::_('COM_USERS_REGISTRATION_PASSWORD_STRENGTH'); ?></label>
-                            <progress id="password-strength" class="uk-progress" value="0" max="100"></progress>
-                        </div>
-                    <?php endif; ?>
-
                     <div class="uk-margin-medium-top">
                         <button type="submit" class="uk-button uk-button-primary uk-width-1-1">
-                            <span uk-icon="icon: user"></span> <?php echo Text::_('JREGISTER'); ?>
+                            <span uk-icon="icon: user"></span> <?php echo Text::_('COM_USERS_MFA_VALIDATE'); ?>
                         </button>
                     </div>
 
                     <div class="uk-margin uk-text-center">
                         <a class="uk-button uk-button-link" href="<?php echo Route::_('index.php?option=com_users&view=login'); ?>">
-                            <span uk-icon="icon: arrow-left"></span> <?php echo Text::_('COM_USERS_LOGIN_REGISTER'); ?>
+                            <span uk-icon="icon: arrow-left"></span> <?php echo Text::_('JLOGIN'); ?>
                         </a>
                     </div>
 

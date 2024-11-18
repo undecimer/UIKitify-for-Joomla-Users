@@ -32,14 +32,11 @@ $wa->useScript('keepalive')
         <div class="uk-card uk-card-default">
             <div class="uk-card-header uk-background-muted">
                 <h3 class="uk-card-title uk-margin-remove">
-                    <span uk-icon="icon: question"></span> <?php echo Text::_('COM_USERS_REMIND_REQUEST_TITLE') ?>
+                    <span uk-icon="icon: question"></span> <?php echo Text::_('COM_USERS_REMIND') ?>
                 </h3>
             </div>
 
             <div class="uk-card-body">
-                <div class="uk-alert uk-alert-primary">
-                    <?php echo Text::_('COM_USERS_REMIND_REQUEST_DESC') ?>
-                </div>
 
                 <form id="user-registration" 
                       action="<?php echo Route::_('index.php?option=com_users&task=remind.remind'); ?>" 
@@ -67,7 +64,7 @@ $wa->useScript('keepalive')
 
             <div class="uk-card-footer uk-background-muted uk-text-center">
                 <a href="<?php echo Route::_('index.php?option=com_users&view=login'); ?>" class="uk-button uk-button-link">
-                    <span uk-icon="icon: arrow-left"></span> <?php echo Text::_('COM_USERS_LOGIN_REMIND'); ?>
+                    <span uk-icon="icon: arrow-left"></span> <?php echo Text::_('COM_USERS_LOGIN_DEFAULT_LABEL'); ?>
                 </a>
             </div>
         </div>
